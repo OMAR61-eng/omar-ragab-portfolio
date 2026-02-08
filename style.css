@@ -1,74 +1,92 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0f172a;
-  color: #e5e7eb;
-}
-body.dark {
-  background: #121212;
-  color: #f1f1f1;
+margin: 0;
+font-family: Arial, sans-serif;
+background: #0f172a;
+color: #e5e7eb;
+transition: 0.3s;
 }
 
-body.dark .card {
-  background: #1e1e1e;
+body.dark {
+background: #f8fafc;
+color: #0f172a;
 }
-    
+
 .hero {
-  text-align: center;
-  padding: 60px 20px;
+text-align: center;
+padding: 60px;
 }
 
 .profile-pic {
-  width: 140px;
-  border-radius: 50%;
-  margin-bottom: 20px;
+width: 140px;
+border-radius: 50%;
+margin-bottom: 15px;
 }
 
 .usp {
-  color: #38bdf8;
-  font-weight: bold;
+color: #38bdf8;
+font-weight: bold;
 }
 
 .socials img {
-  width: 30px;
-  margin: 10px;
-  filter: invert(1);
+width: 28px;
+margin: 10px;
+filter: invert(1);
+}
+
+body.dark .socials img {
+filter: invert(0);
+}
+
+.btn {
+display: inline-block;
+padding: 12px 22px;
+background: #38bdf8;
+color: black;
+border-radius: 8px;
+text-decoration: none;
+margin-top: 15px;
+font-weight: bold;
+}
+
+.btn:hover {
+background: #0ea5e9;
 }
 
 section {
-  max-width: 900px;
-  margin: auto;
-  padding: 40px 20px;
+max-width: 900px;
+margin: auto;
+padding: 40px 20px;
 }
 
-.project {
-  border-left: 4px solid #38bdf8;
-  padding-left: 15px;
-  margin-bottom: 20px;
+.project-card {
+border-left: 4px solid #38bdf8;
+padding-left: 15px;
+margin-bottom: 20px;
 }
 
-.links a {
-  margin-right: 15px;
-  color: #38bdf8;
-  text-decoration: none;
+.project-card a {
+color: #38bdf8;
+margin-right: 15px;
+text-decoration: none;
 }
 
 footer {
-  text-align: center;
-  padding: 20px;
-  color: #94a3b8;
-}
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+text-align: center;
+padding: 20px;
+opacity: 0.6;
 }
 
 .fade-up {
-  animation: fadeUp 1s ease forwards;
+animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+from {
+opacity: 0;
+transform: translateY(30px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
 }
