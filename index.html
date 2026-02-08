@@ -2,104 +2,205 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Omar Ragab | Full-Stack & Security Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Full-Stack Developer specializing in Django, Angular and Web Security">
-<meta name="keywords" content="Full Stack Developer, Django, Angular, Cybersecurity">
+<title>Omar Ragab | Cybersecurity & Full Stack Developer</title>
+<meta name="description" content="Cybersecurity Engineer & Full Stack Developer specializing in secure web applications and penetration testing.">
+<meta name="keywords" content="Cybersecurity, Full Stack, Django, Angular, Penetration Testing">
 <meta name="author" content="Omar Ragab">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <link rel="stylesheet" href="style.css">
-<script defer src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 
 <body>
 
-<header class="hero fade-up">
-  <img src="assets/profile.jpg" class="profile-pic">
+<div id="particles-js"></div>
 
-  <h1>Omar Ragab</h1>
-  <h2>Full-Stack Developer & Cybersecurity Enthusiast</h2>
+<!-- TERMINAL INTRO -->
+<section class="terminal">
+  <div class="terminal-box">
+    <p id="terminal-text"></p>
+  </div>
+</section>
 
-  <p class="usp">
-    Full-Stack Developer with a Security-First mindset,
-    building scalable and secure web applications.
+<!-- HERO -->
+<section class="hero">
+  <img src="assets/profile.jpg" alt="Omar Ragab" class="profile-pic">
+  <h1>Omar Ragab Mohammed</h1>
+  <h2>Cybersecurity Engineer | Full Stack Developer</h2>
+
+  <div class="buttons">
+    <a href="assets/OMAR RAGAB MOHAMMED_CV.pdf" download class="btn-primary">Download CV</a>
+    <a href="#projects" class="btn-secondary">Projects</a>
+  </div>
+</section>
+
+<!-- SUMMARY -->
+<section class="section">
+  <h2>Professional Summary</h2>
+  <p>
+    Cybersecurity-focused Full Stack Developer with hands-on experience in
+    penetration testing, secure application development, and backend systems.
+    Strong background in Django, Angular, and security tools with a passion
+    for building resilient and scalable solutions.
+  </p>
+</section>
+
+<!-- EDUCATION -->
+<section class="section">
+  <h2>Education</h2>
+  <p>
+    Bachelor of Computer Science – Cybersecurity Department<br>
+    Beni Suef National University
+  </p>
+</section>
+
+<!-- COURSES -->
+<section class="section">
+  <h2>Courses & Training</h2>
+  <ul>
+    <li>Ethical Hacking & Penetration Testing – NTI</li>
+    <li>CCNA – NTI & Cisco</li>
+    <li>Introduction to Cybersecurity – NTI</li>
+    <li>Python & PostgreSQL – ITI</li>
+    <li>HTML, CSS & JavaScript – ITI</li>
+    <li>Penetration Testing – Udemy</li>
+  </ul>
+</section>
+
+<!-- SKILLS -->
+<section class="section">
+  <h2>Technical Skills</h2>
+
+  <div class="skill-list">
+    <!-- Programming & Backend -->
+    <span>Python</span>
+    <span>Django</span>
+    <span>REST APIs</span>
+    <span>Angular</span>
+    <span>JavaScript</span>
+
+    <!-- Databases -->
+    <span>PostgreSQL</span>
+    <span>MS SQL Server</span>
+
+    <!-- SOC & Security -->
+    <span>SOC Fundamentals</span>
+    <span>SIEM Monitoring</span>
+    <span>Incident Response</span>
+    <span>Log Analysis</span>
+    <span>Threat Detection</span>
+    <span>Security Operations</span>
+
+    <!-- Penetration Testing -->
+    <span>Penetration Testing</span>
+    <span>Vulnerability Assessment</span>
+    <span>Nmap</span>
+    <span>Metasploit</span>
+    <span>Burp Suite</span>
+    <span>Gobuster</span>
+    <span>Web Application Testing</span>
+
+    <!-- Systems -->
+    <span>Linux</span>
+    <span>Networking Fundamentals</span>
+    <span>Git & GitHub</span>
+  </div>
+</section>
+
+
+<!-- EXPERIENCE -->
+<section class="section">
+  <h2>Experience</h2>
+
+  <p>
+    <strong>Digital Egypt Pioneers Initiative (DEPI)</strong><br>
+    <em>Information Analysis Track</em><br>
+    Participated in Egypt’s national digital transformation initiative, gaining
+    practical skills in data analysis, information processing, and analytical
+    thinking applied to real-world digital systems.
   </p>
 
-  <div class="socials">
-    <a href="https://github.com/OMAR61-eng" target="_blank">
-      <img src="assets/github.svg">
-    </a>
-    <a href="https://www.linkedin.com/in/omar-ragab-690a6528a" target="_blank">
-      <img src="assets/linkedin.svg">
-    </a>
+  <p>
+    <strong>CIB Summer Internship – Green Leap Program</strong><br>
+    Exposure to sustainability, leadership, and innovation in modern banking systems.
+  </p>
+
+  <p>
+    <strong>Cybersecurity Trainee – National Telecommunication Institute (NTI)</strong><br>
+    Conducted Windows 10 penetration testing, vulnerability assessment, and security analysis.
+  </p>
+
+  <p>
+    <strong>ICPC Contestant</strong><br>
+    Competitive programming experience focusing on algorithms, data structures, and teamwork.
+  </p>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="glass-card">
+    <h3>Amazon Plus – E-Commerce Platform</h3>
+    <p>
+      Secure PHP-based e-commerce system with authentication, admin dashboard,
+      and optimized user experience.
+    </p>
+    <a href="https://amazonplus.kesug.com/" target="_blank">Live Demo</a>
   </div>
 
-  <a class="btn" href="assets/Omar_Ragab_CV.pdf" download>
-    Download CV
-  </a>
+  <div class="glass-card">
+    <h3>Text Encryption Web Application</h3>
+    <p>
+      Django application implementing encryption and decryption techniques
+      with secure coding practices.
+    </p>
+    <a href="https://omarragab0.pythonanywhere.com" target="_blank">Live Demo</a>
+  </div>
 
-  <button id="themeToggle">☀ / 🌙</button>
-</header>
-
-<section class="fade-up">
-<h3>About Me</h3>
-<p>
-Full-Stack Developer experienced in Angular, Django, REST APIs, and backend security.
-Strong understanding of cryptography, networking fundamentals, and secure system design.
-</p>
+  <div class="glass-card">
+    <h3>Library Management System</h3>
+    <p>
+      Angular + Django system with MS SQL backend, supporting CRUD operations
+      and role-based access control.
+    </p>
+    <a href="https://github.com/OMAR61-eng/library-management-angular-django" target="_blank">GitHub</a>
+  </div>
 </section>
 
-<section class="fade-up">
-<h3>Projects</h3>
+<!-- CONTACT -->
+<section class="section contact">
+  <h2>Contact</h2>
 
-<div class="project-card">
-<h4>📚 Library Management System</h4>
-<p>
-Full-Stack system built with Django & Angular.
-Includes book management, rentals, sales analytics, charts, and role-based logic.
-</p>
-<a href="https://github.com/OMAR61-eng/library-management-angular-django" target="_blank">GitHub</a>
-<a href="https://omarragab0.pythonanywhere.com" target="_blank">Live</a>
-</div>
+  <div class="contact-icons">
+    <a href="mailto:oragab031@gmail.com" aria-label="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
 
-<div class="project-card">
-<h4>🔐 Cryptography System</h4>
-<p>
-Security-focused Django project implementing AES & DES encryption,
-password strength validation, and cryptographic utilities.
-</p>
-<a href="https://github.com/OMAR61-eng/cipher_project" target="_blank">GitHub</a>
-</div>
+    <a href="tel:+201555967662" aria-label="Phone">
+      <i class="fas fa-phone"></i>
+    </a>
 
-<div class="project-card">
-<h4>🛒 Amazon Plus E-commerce</h4>
-<p>
-E-commerce platform with product management, UI components, and backend logic.
-</p>
-<a href="https://github.com/OMAR61-eng/Amazon-Plus-E-commerce" target="_blank">GitHub</a>
-<a href="https://amazonplus.kesug.com/" target="_blank">Live</a>
-</div>
+    <a href="https://www.linkedin.com/in/omar-ragab-690a6528a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+
+    <a href="https://github.com/OMAR61-eng" target="_blank" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
 </section>
 
-<section class="fade-up">
-<h3>Skills</h3>
-<p>
-Angular · Django · REST APIs · Python · JavaScript · SQL · Cryptography · Networking · Git · Linux
-</p>
-</section>
 
-<section class="fade-up">
-<h3>Certificates</h3>
-<p>
-• Cybersecurity Fundamentals  
-• Networking Essentials  
-• Web Development Foundations  
-</p>
-</section>
 
 <footer>
-© Omar Ragab | Full-Stack Developer & Cybersecurity Enthusiast
+  <p>© 2025 Omar Ragab Mohammed</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
