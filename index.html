@@ -883,66 +883,7 @@
             fill: currentColor;
         }
 
-        .edit-link-btn {
-            font-size: 0.6rem;
-            font-family: 'JetBrains Mono', monospace;
-            letter-spacing: 0.1em;
-            color: var(--text3);
-            background: none;
-            border: 1px solid var(--border);
-            padding: 0.2rem 0.5rem;
-            cursor: pointer;
-            transition: all 0.2s;
-            margin-left: 0.4rem;
-        }
 
-        .edit-link-btn:hover {
-            border-color: var(--green);
-            color: var(--green);
-        }
-
-        .link-input-wrap {
-            display: none;
-            align-items: center;
-            gap: 0.4rem;
-            width: 100%;
-        }
-
-        .link-input-wrap.visible {
-            display: flex;
-        }
-
-        .link-input {
-            flex: 1;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.65rem;
-            background: var(--surface2);
-            border: 1px solid var(--border2);
-            color: var(--text);
-            padding: 0.3rem 0.6rem;
-            outline: none;
-            transition: border-color 0.2s;
-        }
-
-        .link-input:focus {
-            border-color: var(--cyan);
-        }
-
-        .link-save-btn {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.65rem;
-            background: rgba(0, 212, 255, 0.1);
-            border: 1px solid var(--cyan);
-            color: var(--cyan);
-            padding: 0.3rem 0.6rem;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-
-        .link-save-btn:hover {
-            background: var(--cyan);
-            color: var(--bg);
-        }
 
         .card-live {
             font-family: 'JetBrains Mono', monospace;
@@ -1626,6 +1567,7 @@
                 subtitle: 'Splunk BOTSv1 – Poison Ivy APT',
                 desc: 'Full forensic investigation of a coordinated multi-phase attack: Acunetix scanning, Shellshock exploitation (CVE-2014-6271), 706 login attempts/min brute-force, PHP web shell deployment (agent.php), and reverse shell on Port 1337.',
                 stack: ['Splunk SPL', 'MITRE ATT&CK', 'Sysmon', 'Windows Event Logs', 'Threat Intel'],
+                github: 'https://github.com/OMAR61-eng/BOTSv1-Joomla-Incident-Response',
                 featured: true
             },
             {
@@ -1637,6 +1579,7 @@
                 subtitle: 'Splunk BOTSv2 – Multi-Stage Intrusion',
                 desc: 'Investigated a sophisticated APT attack combining insider threat, web exploitation (XSS, SQLi, Shellshock), HTTP TRACE abuse for session hijacking, malicious USB compromise, lateral movement, and ransomware deployment on Mallory\'s endpoint.',
                 stack: ['Splunk SIEM', 'Kill Chain Analysis', 'Session Hijacking', 'Ransomware IR', 'MITRE ATT&CK'],
+                github: 'https://github.com/OMAR61-eng/BOTSv2-TAEDONGGANG-APT-Incident-Response',
                 featured: true
             },
             {
@@ -1648,6 +1591,7 @@
                 subtitle: 'Splunk SIEM Lab',
                 desc: 'End-to-end incident response on Windows Server 2022: port scan → brute-force (Hydra) → WinRM initial access (Evil-WinRM) → persistence → privilege escalation → full RDP takeover. Key Event IDs: 4625, 4624, 4720, 4732, 4688.',
                 stack: ['Splunk', 'Sysmon', 'Hydra', 'Evil-WinRM', 'CrackMapExec', 'Nmap'],
+                github: 'https://github.com/OMAR61-eng/PCAD-Incident-Response',
             },
             {
                 id: 'multiproto',
@@ -1658,6 +1602,7 @@
                 subtitle: 'GlobalCorp Simulation – Cisco Packet Tracer',
                 desc: 'Designed a full enterprise network connecting 3 branches via EIGRP/RIPv2/OSPF with HSRP high availability (VIP: 192.168.1.1). Implemented layered Extended ACL security policy blocking lateral Sales-to-Finance access and locking down the server farm.',
                 stack: ['OSPF Area 0', 'EIGRP', 'HSRP', 'Extended ACLs', 'Cisco IOS', 'Packet Tracer'],
+                github: 'https://github.com/OMAR61-eng/multi-protocol-network-security-lab',
             },
             {
                 id: 'entnet',
@@ -1668,6 +1613,7 @@
                 subtitle: '3-Router HQ-to-Branch Network',
                 desc: 'Configured OSPFv2 Area 0 across 3 routers with MD5 credentials, VLAN management, and VTY controls. Resolved 4 real-world faults: administratively downed interfaces, subnet mismatches, deleted OSPF process, and DNS resolution failures.',
                 stack: ['OSPFv2', 'VLAN', 'CDP', 'ARP', 'Traceroute', 'Cisco Packet Tracer'],
+                github: 'https://github.com/OMAR61-eng/enterprise-network-implementation-cisco',
             },
             {
                 id: 'winhack',
@@ -1678,6 +1624,7 @@
                 subtitle: 'National Telecommunication Institute (NTI)',
                 desc: 'Full penetration test on Windows 10: Nmap scanning, FTP/SMB/SSH service exploitation, WhatWeb fingerprinting, Gobuster enumeration, WebDAV file retrieval (Cadaver/cURL), RDP simulation (xfreerdp), payload delivery via Metasploit.',
                 stack: ['Nmap', 'Metasploit', 'Gobuster', 'WhatWeb', 'xfreerdp', 'Cadaver'],
+                github: '',
             },
             {
                 id: 'encrypt',
@@ -1688,6 +1635,7 @@
                 subtitle: 'Lead Developer',
                 desc: 'Secure web interface for sensitive data transmission using SHA-256 hashing, AES symmetric encryption, and RSA asymmetric encryption. Django/DRF backend with input sanitization and key management.',
                 stack: ['Python', 'Django', 'AES', 'RSA', 'SHA-256', 'REST API'],
+                github: 'https://github.com/OMAR61-eng/cipher-django-encryption',
             },
             {
                 id: 'library',
@@ -1698,6 +1646,7 @@
                 subtitle: 'Angular + Django REST Framework',
                 desc: 'Full-stack library platform with book CRUD, status tracking (Available/Sold/Rented), profit analytics dashboard, Chart.js visualizations, category filtering, and search. Modular REST API architecture with AdminLTE UI.',
                 stack: ['Angular', 'TypeScript', 'Django', 'DRF', 'SQLite', 'Chart.js', 'AdminLTE'],
+                github: 'https://github.com/OMAR61-eng/library-management-angular-django',
             },
             {
                 id: 'amazon',
@@ -1708,6 +1657,7 @@
                 subtitle: 'PHP / MySQL Full-Stack',
                 desc: 'Complete e-commerce web application with user authentication, product browsing, cart/checkout flow, admin dashboard, and responsive UI. Applied SQLi and XSS prevention techniques throughout.',
                 stack: ['PHP', 'MySQL', 'JavaScript', 'HTML/CSS', 'Admin Dashboard'],
+                github: 'https://github.com/OMAR61-eng/Amazon-Plus-E-commerce',
             },
             {
                 id: 'scheduling',
@@ -1718,6 +1668,7 @@
                 subtitle: 'Django Web Application',
                 desc: 'Interactive Django app visualizing 5 OS scheduling algorithms: FCFS, SJF (Preemptive/Non-Preemptive), Priority, Round Robin, and Banker\'s Algorithm with Safety Algorithm and Resource Request simulation.',
                 stack: ['Django', 'Python', 'HTML/CSS', 'Algorithms', 'FCFS', 'SJF', 'Round Robin'],
+                github: 'https://github.com/OMAR61-eng/os-scheduling-algorithms',
             },
             {
                 id: 'irrigation',
@@ -1728,6 +1679,7 @@
                 subtitle: 'ESP32 + Blynk IoT Platform',
                 desc: 'Automated irrigation with dual-sensor feedback (LM393 soil moisture + HC-SR04 ultrasonic), 10A 220V relay pump isolation, multi-sample averaging filter, and Blynk IoT real-time telemetry with historical trend analytics.',
                 stack: ['ESP32', 'C++', 'Blynk IoT', 'Ultrasonic', 'Relay', 'Embedded Systems'],
+                github: 'https://github.com/OMAR61-eng/smart-irrigation-esp32-blynk',
             },
             {
                 id: 'tictactoe',
@@ -1738,6 +1690,7 @@
                 subtitle: 'Python CLI Application',
                 desc: 'Robust CLI Tic-Tac-Toe with OOP design, dynamic state management, strict input sanitization, matrix evaluation algorithm for win/draw detection, and modular architecture ready for Minimax AI integration.',
                 stack: ['Python', 'OOP', 'CLI', 'State Management', 'Input Validation'],
+                github: 'https://github.com/OMAR61-eng/python-tic-tac-toe-logic',
             }
         ];
 
@@ -1745,8 +1698,6 @@
             const grid = document.getElementById('projectsGrid');
             const filtered = filter === 'all' ? projects : projects.filter(p => p.type === filter);
             grid.innerHTML = filtered.map(p => {
-                const savedLink = localStorage.getItem('gh_' + p.id) || '';
-                const hasLink = savedLink !== '';
                 return `
     <div class="project-card ${p.type} ${p.featured ? 'highlight-card' : ''}" data-type="${p.type}" data-id="${p.id}">
       <span class="card-type ${p.type}">${p.typeLabel}</span>
@@ -1757,40 +1708,15 @@
       <div class="card-stack">${p.stack.map(s => `<span class="stack-tag">${s}</span>`).join('')}</div>
       <div class="card-footer">
         <div class="github-link-wrap">
-          <div id="link-display-${p.id}" style="${hasLink ? '' : ''}">
-            ${hasLink
-                        ? `<a class="github-btn" href="${savedLink}" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> VIEW ON GITHUB</a>
-               <button class="edit-link-btn" onclick="toggleEdit('${p.id}')">EDIT</button>`
-                        : `<button class="github-btn" onclick="toggleEdit('${p.id}')"><svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> + ADD GITHUB LINK</button>`
-                    }
-          </div>
-          <div class="link-input-wrap" id="link-edit-${p.id}">
-            <input class="link-input" id="link-input-${p.id}" type="url" placeholder="https://github.com/OMAR61-eng/..." value="${savedLink}">
-            <button class="link-save-btn" onclick="saveLink('${p.id}')">SAVE</button>
-            <button class="edit-link-btn" onclick="toggleEdit('${p.id}')">✕</button>
-          </div>
+          ${p.github
+            ? `<a class="github-btn" href="${p.github}" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> VIEW ON GITHUB</a>`
+            : `<span class="github-btn" style="opacity:0.4;cursor:default;"><svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> PRIVATE PROJECT</span>`
+          }
         </div>
         <span class="card-live">${p.typeLabel}</span>
       </div>
     </div>`;
             }).join('');
-        }
-
-        function toggleEdit(id) {
-            const display = document.getElementById('link-display-' + id);
-            const edit = document.getElementById('link-edit-' + id);
-            const isVisible = edit.classList.contains('visible');
-            display.style.display = isVisible ? 'flex' : 'none';
-            if (isVisible) { edit.classList.remove('visible'); }
-            else { edit.classList.add('visible'); display.style.display = 'none'; document.getElementById('link-input-' + id).focus(); }
-        }
-
-        function saveLink(id) {
-            const val = document.getElementById('link-input-' + id).value.trim();
-            if (val) localStorage.setItem('gh_' + id, val);
-            else localStorage.removeItem('gh_' + id);
-            const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
-            renderProjects(activeFilter);
         }
 
         renderProjects('all');
