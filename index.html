@@ -219,14 +219,14 @@
             inset: -4px;
             background: conic-gradient(from 0deg, var(--cyan), var(--green), var(--cyan), transparent, var(--cyan));
             animation: photo-rotate 6s linear infinite;
-            clip-path: polygon(
-                0% 15%, 15% 0%, 85% 0%, 100% 15%,
-                100% 85%, 85% 100%, 15% 100%, 0% 85%
-            );
+            clip-path: polygon(0% 15%, 15% 0%, 85% 0%, 100% 15%,
+                    100% 85%, 85% 100%, 15% 100%, 0% 85%);
         }
 
         @keyframes photo-rotate {
-            to { filter: hue-rotate(360deg); }
+            to {
+                filter: hue-rotate(360deg);
+            }
         }
 
         .hero-photo-frame::after {
@@ -234,10 +234,8 @@
             position: absolute;
             inset: 0;
             background: var(--bg);
-            clip-path: polygon(
-                0% 15%, 15% 0%, 85% 0%, 100% 15%,
-                100% 85%, 85% 100%, 15% 100%, 0% 85%
-            );
+            clip-path: polygon(0% 15%, 15% 0%, 85% 0%, 100% 15%,
+                    100% 85%, 85% 100%, 15% 100%, 0% 85%);
         }
 
         .hero-photo {
@@ -246,10 +244,8 @@
             object-fit: cover;
             position: relative;
             z-index: 1;
-            clip-path: polygon(
-                0% 15%, 15% 0%, 85% 0%, 100% 15%,
-                100% 85%, 85% 100%, 15% 100%, 0% 85%
-            );
+            clip-path: polygon(0% 15%, 15% 0%, 85% 0%, 100% 15%,
+                    100% 85%, 85% 100%, 15% 100%, 0% 85%);
             filter: brightness(1.1) contrast(1.05);
             transition: filter 0.4s;
         }
@@ -267,8 +263,15 @@
         }
 
         @keyframes photo-glow {
-            from { opacity: 0.5; transform: scale(0.95); }
-            to { opacity: 1; transform: scale(1.05); }
+            from {
+                opacity: 0.5;
+                transform: scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1.05);
+            }
         }
 
         @media(max-width:768px) {
@@ -277,10 +280,12 @@
                 text-align: center;
                 gap: 2rem;
             }
+
             .hero-photo-frame {
                 width: 200px;
                 height: 200px;
             }
+
             .hero-photo {
                 width: 190px;
                 height: 190px;
@@ -1184,16 +1189,18 @@
                 <h1 class="hero-name glitch" data-text="MOHAMMED"
                     style="color:var(--cyan);font-size:clamp(1.8rem,4.5vw,4rem);margin-bottom:1.5rem;">MOHAMMED</h1>
                 <div class="hero-title">
-                    SOC ANALYST<span class="pipe">|</span>MALWARE ANALYST<span class="pipe">|</span>NETWORK SECURITY<span
-                        class="pipe">|</span>WEB DEVELOPER
+                    SOC ANALYST<span class="pipe">|</span>MALWARE ANALYST<span class="pipe">|</span>NETWORK
+                    SECURITY<span class="pipe">|</span>WEB DEVELOPER
                 </div>
-                <p class="hero-desc">Building the gap between offensive security and defensive operations. Expert in Splunk
-                    SIEM, incident response, MITRE ATT&amp;CK, and secure web development. Currently advancing through Digital
+                <p class="hero-desc">Building the gap between offensive security and defensive operations. Expert in
+                    Splunk
+                    SIEM, incident response, MITRE ATT&amp;CK, and secure web development. Currently advancing through
+                    Digital
                     Egypt Pioneers Initiative (DEPI).</p>
                 <div class="hero-ctas">
                     <a href="#projects" class="btn-primary"><span>VIEW PROJECTS</span></a>
                     <a href="#contact" class="btn-secondary">CONTACT ME</a>
-                    <a href="Omar_Ragab_Mohammed_CV.pdf" class="btn-secondary" download="Omar_Ragab_Mohammed_CV.pdf">DOWNLOAD CV</a>
+                    <a href="Omar_Ragab_CV.pdf" class="btn-secondary" download="Omar_Ragab_CV.pdf">DOWNLOAD CV</a>
                 </div>
             </div>
             <div class="hero-photo-wrap">
@@ -1709,9 +1716,9 @@
       <div class="card-footer">
         <div class="github-link-wrap">
           ${p.github
-            ? `<a class="github-btn" href="${p.github}" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> VIEW ON GITHUB</a>`
-            : `<span class="github-btn" style="opacity:0.4;cursor:default;"><svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> PRIVATE PROJECT</span>`
-          }
+                        ? `<a class="github-btn" href="${p.github}" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> VIEW ON GITHUB</a>`
+                        : `<span class="github-btn" style="opacity:0.4;cursor:default;"><svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> PRIVATE PROJECT</span>`
+                    }
         </div>
         <span class="card-live">${p.typeLabel}</span>
       </div>
